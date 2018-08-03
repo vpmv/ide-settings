@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[
+\$this->Html->script(array('${1:}')${2:, array('block'=>'script')});
+]]></content>
+</snippet>

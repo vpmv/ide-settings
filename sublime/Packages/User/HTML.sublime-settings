@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/User/Monokai Bright - HTML.tmTheme",
+	"extensions":
+	[
+        "ctp",
+        // "php",
+        "html"
+	]
+}

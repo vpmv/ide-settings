@@ -1,0 +1,174 @@
+[
+  { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" },
+  { "keys": ["ctrl+alt+c"], "command": "colorpicker" },
+
+	{
+		"keys": ["alt+up"],
+	    "command": "hayaku_cycling_through_values",
+	    "args": {"modifier": 1}
+	},
+	{
+		"keys": ["alt+down"],
+	    "command": "hayaku_cycling_through_values",
+	    "args": {"modifier": -1}
+	},
+
+	// BRACKET HIGHLIGHTER
+	// Toggle Global Enable
+   {
+       "keys": ["ctrl+alt+shift+e"],
+       "command": "bh_toggle_enable"
+   },
+   // Search to end of file for bracket
+   {
+       "keys": ["alt+super+b"],
+       "command": "bh_key",
+       "args":
+       {
+           "lines" : true
+       }
+   },
+   // Go to left bracket
+   {
+        "keys": ["alt+super+up"],
+        "caption": "BracketHighlighter: Jump to Left Bracket",
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "left"}
+            }
+        }
+    },
+   // Go to right bracket
+   {
+        "keys": ["alt+super+down"],
+        "caption": "BracketHighlighter: Jump to Left Bracket",
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "right"}
+            }
+        }
+    },
+   // Remove brackets
+   {
+       "keys": ["alt+super+r"],
+       "command": "bh_remove_brackets"
+   },
+   // Toggle string escape mode for sub bracket search in strings
+   {
+       "keys": ["ctrl+alt+shift+x"],
+       "command": "bh_toggle_string_escape_mode"
+   },
+   // Select text between brackets
+   {
+       "keys": ["alt+super+space"],
+       "command": "bh_key",
+       "args":
+       {
+           "lines" : true,
+           "plugin":
+           {
+               "type": ["__all__"],
+               "command": "bh_modules.bracketselect"
+           }
+       }
+   },
+   // Select tag name of HTML/XML tag (both opening name and closing)
+   {
+       "keys": ["ctrl+alt+shift+t"],
+       "command": "bh_key",
+       "args":
+       {
+           "plugin":
+           {
+               "type": ["cfml", "html", "angle"],
+               "command": "bh_modules.tagnameselect"
+           }
+       }
+   },
+   // Select the attribute to the right of the cursor (will wrap inside the tag)
+   {
+       "keys": ["ctrl+alt+shift+right"],
+       "command": "bh_key",
+       "args":
+       {
+           "plugin":
+           {
+               "type": ["cfml", "html", "angle"],
+               "command": "bh_modules.tagattrselect",
+               "args": {"direction": "right"}
+           }
+       }
+   },
+   // Select the attribute to the left of the cursor (will wrap inside the tag)
+   {
+       "keys": ["ctrl+alt+shift+left"],
+       "command": "bh_key",
+       "args":
+       {
+           "plugin":
+           {
+               "type": ["cfml", "html", "angle"],
+               "command": "bh_modules.tagattrselect",
+               "args": {"direction": "left"}
+           }
+       }
+   },
+   // Convert single quote string to double quoted string and vice versa
+   // Will handle escaping or unescaping quotes within the string
+   {
+       "keys": ["ctrl+alt+shift+q"],
+       "command": "bh_key",
+       "args":
+       {
+           "lines" : true,
+           "plugin":
+           {
+               "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+               "command": "bh_modules.swapquotes"
+           }
+       }
+   },
+   // Fold contents between brackets
+   {
+       "keys": ["ctrl+alt+shift+["],
+       "command": "bh_key",
+       "args":
+       {
+           "plugin": {
+               "type": ["__all__"],
+               "command" : "bh_modules.foldbracket"
+           }
+       }
+   },
+   // Swap brackets with another type
+   {
+       "keys": ["ctrl+alt+shift+e"],
+       "command": "swap_brackets"
+   },
+   // Surround selection with brackets from quick panel
+   {
+       "keys": ["ctrl+alt+shift+w"],
+       "command": "wrap_brackets"
+   },
+   // Toggle high visibility mode
+   {
+       "keys": ["ctrl+alt+shift+v"],
+       "command": "bh_toggle_high_visibility"
+   }
+
+   // fix plaintasks
+   // { "keys": ["ctrl+d"], "command": "find_under_expand" },
+   // { "keys": ["alt+d"], "command": "" }
+]

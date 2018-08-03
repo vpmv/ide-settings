@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"BracketHighlighter",
+		"ColorPicker",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"Hayaku - tools for writing CSS faster",
+		"HTMLBeautify",
+		"Markdown Preview",
+		"Mediawiker",
+		"Origami",
+		"Package Control",
+		"PHP Completions Kit",
+		"PHP-Twig",
+		"PlainTasks",
+		"Pretty JSON",
+		"SCSS",
+		"SqlBeautifier",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Text Pastry",
+		"Theme - Soda"
+	]
+}

@@ -1,0 +1,10 @@
+BashSupport
+Lua
+com.alayouni.ansiHighlight
+com.github.masahirosuzuka.PhoneGapIntelliJPlugin
+com.intellij.ideolog
+de.espend.idea.php.annotation
+fr.adrienbrault.idea.symfony2plugin
+mobi.hsz.idea.gitignore
+org.zalando.intellij.swagger
+ru.adelf.idea.dotenv

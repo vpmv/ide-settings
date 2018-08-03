@@ -1,0 +1,36 @@
+{
+	"auto_complete_cycle": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.scssc"
+	],
+	"color_scheme": "Packages/User/Monokai Bright (SL).tmTheme",
+	"font_size": 11,
+	"hayaku_use_default_cycling_keymaps": false,
+	"ignored_packages":
+	[
+		"All Autocomplete",
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"cdm"
+	],
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
